@@ -1,0 +1,92 @@
+Delivered-To: prashantg956@gmail.com
+Received: by 2002:a5d:61d1:0:0:0:0:0 with SMTP id q17-v6csp471602wrv;
+        Thu, 6 Sep 2018 06:18:53 -0700 (PDT)
+X-Received: by 2002:a50:a0a6:: with SMTP id 35-v6mr3500285edo.280.1536239933058;
+        Thu, 06 Sep 2018 06:18:53 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1536239933; cv=none;
+        d=google.com; s=arc-20160816;
+        b=1DLhiH6yS8GnILxTrG6J2rhXaLonIcGPxlOFxHJTob2XZGMS+fyuLV2aRw01HLjMGl
+         QAW9vqvUrVKelm+o3vIF6mAZFiB3pwSsc2XCNop+fp9j7AK9hwlkMpTr+dREBsAMBoEd
+         tlOx0vB99uDEtkC55C4Dor2KI1iGDwSZAldwGd1FVDhk37Ie7Pnk+2MqXyKjcWjRHWef
+         eIWTXJziwlGM92S+lE2r9Rr3/laSyDfaSYHvQz4aUxIAYQople73n5JCerMgR9t76+4B
+         Vee4Oq6Cb6+P/xL6K0gkfaoet43sSY4frNeMK+/Vx3aPEQ6G+QIQXHPYCDYgG/gBlWWG
+         VV3Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Ebj6zwUjlhn0FAGjHEqc0iYcgFbM6O8uKsPvO5jx/8A=;
+        b=pqeFKMc1W2twTHTtGOhkCmmqiwQnoch+KV+LNtOA1brDmy2wUrd0VWVy1bdgX38ahP
+         uwR8SYraRYOyz2GwmD3NtaXM7vxHO6wQ1KYOASau3cTj55LoZfu9rsomri67fmndgMD0
+         nwZ9S72hsQBa/j50RHtySJwdkYt7YjEKz9+ZhxlPelXMi51Wu8Zwfa0lfqeA7IMFtfnN
+         Ve3GCuQzzQvD+6ORfNrZxABJZCr9PegE5ehpEkpR6VM44d+8/VnPGtF48tSnO/O0iInC
+         pP8ihtpMj0UfV4LcuiOtamJF3l3opxMSfj+wtGX/EZnpeCF5Nn4TjrvZT7j0LPsg1UD7
+         VNWw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=qhOyyiZg;
+       spf=pass (google.com: domain of pgupta1526@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pgupta1526@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <pgupta1526@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id r58-v6sor5261254edr.26.2018.09.06.06.18.52
+        for <PRASHANTG956@gmail.com>
+        (Google Transport Security);
+        Thu, 06 Sep 2018 06:18:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of pgupta1526@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=qhOyyiZg;
+       spf=pass (google.com: domain of pgupta1526@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pgupta1526@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Ebj6zwUjlhn0FAGjHEqc0iYcgFbM6O8uKsPvO5jx/8A=;
+        b=qhOyyiZgEcv2Wyx6uhgvUAB3RZ7sawc2rqHJTSOVoBuvUJ6RsUXfsuWc/w1G/UCAxt
+         LROjqOVTWtKBZE7EciVi5ogjq8dwaUJt1HcehIZdqG2zYWSLfL6MpysexJJZQ8mGni84
+         WQucMOZTaSbZmZ7fz1LBW+7u2NqmpPvvVfLlvVjVhdeRHuBU/XDZfim8ZluZ+0XeUw2F
+         g5SJNf5exiIpQPyQFUtBTNuaRDFiZSdkJfQAGH1cSd7zk0O6DP7OwvU5TFiCPjoqYnh/
+         Fm4ybSKplV8DHDRuR9FhV1VUWjlvCKLXium4ePKfDU0aWLcXFYeN2phRvofPl3RC4Ujd
+         4u+A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Ebj6zwUjlhn0FAGjHEqc0iYcgFbM6O8uKsPvO5jx/8A=;
+        b=KOFyDR/BCl1wOqOwcviQ8ngSuh7KtHuYZEzgEI9xy81DIDH1DUChNh0Ceel7AUmX5i
+         ebY2i5MpJpkKK5ZETOAhfs/UFO3NLjv95B1EmcDthH4ARXh53Qd82YYs19WQfils48Wk
+         6BwqtGgCrWIaDNP8ownbv77w8xRTI5C3EVYfNGizY6dMg1o5JQukcGm1FjSGsb1Qxgvc
+         NxFk4JiNAG6+yZasWnhzTzBeXnbkF2G1kAQxyy7yeVikDdqUK4wXg29pwfuXQnWdqaMp
+         5SikQ2VXJr0VG2DbTqhgJI1b/vIFrpTafslJlWOVvrMp1jBQPlopk7RIELo8RUjD4pPo
+         6sQQ==
+X-Gm-Message-State: APzg51CY9t5R0NV2sHcMXWwUNI+chqaUF+xCISLKKGFkvieflln35KsQ
+	hAtQm8sZ9f6uhNW5xTRYaloXnfL82+fBLoO1FIORuA==
+X-Google-Smtp-Source: ANB0VdZI2O9bkt13+ASsdmJml6pTgYjZDFzklpFpmWfc8yAkrmR6tMUfHYbnde256nRgTyBuwYBavpAg1O+QIJnmUog=
+X-Received: by 2002:a50:8046:: with SMTP id 64-v6mr3460999eda.227.1536239932335;
+ Thu, 06 Sep 2018 06:18:52 -0700 (PDT)
+MIME-Version: 1.0
+From: Prince Gupta <pgupta1526@gmail.com>
+Date: Thu, 6 Sep 2018 18:48:38 +0530
+Message-ID: <CAANhLXyb=-paB-14PyPbo7Ygd23DX3EvXBMVkttvQ5aRk0MhhA@mail.gmail.com>
+Subject: Cool Bios
+To: PRASHANTG956@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000074eb88057533bbba"
+
+--00000000000074eb88057533bbba
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+4o+6KsWgw7hmdHdhcmUgX2RldmVsw7hwZXIqDQrij7oqTMO4Z8Osbl9pw7FfRcOkxZl0aPCfjI4g
+MTRmZWIqDQrij7oq8J+OtU3DvMWhw63EjV9Mw7h2w6jFmfCfjqcqDQrij7oqxaBww7jFmXRzX0zD
+uHbDq8WV4pq9Kg0K4o+6KvCfmJjFgcO4dsOrX8iaxZjDo3bDqsS+Kg0K4o+6KvCflJsgQsOuxJ5f
+xI7FmMOrw4NtxZog8J+UmuKdpCoNCuKPuirinaQgw43FpSfFoF/EhsOzbXDFgmnEh8SByJvDqsSR
+IPCfkp4qDQoNCkZvciBtb3JlIEluc3RhIEJpbyBkb3dubG9hZCBhcHA6IGh0dHA6Ly9iaXQubHkv
+SW5zdGFfQmlvDQo=
+--00000000000074eb88057533bbba
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9ImF1dG8iPuKPuirFoMO4ZnR3YXJlIF9kZXZlbMO4cGVyKjxicj7ij7oqTMO4Z8Os
+bl9pw7FfRcOkxZl0aPCfjI4gMTRmZWIqPGJyPuKPuirwn461TcO8xaHDrcSNX0zDuHbDqMWZ8J+O
+pyo8YnI+4o+6KsWgcMO4xZl0c19Mw7h2w6vFleKavSo8YnI+4o+6KvCfmJjFgcO4dsOrX8iaxZjD
+o3bDqsS+Kjxicj7ij7oq8J+UmyBCw67Enl/EjsWYw6vDg23FmiDwn5Sa4p2kKjxicj7ij7oq4p2k
+wqDDjcWlJiMzOTvFoF/EhsOzbXDFgmnEh8SByJvDqsSRwqDwn5KeKjxicj48YnI+Rm9yIG1vcmUg
+SW5zdGEgQmlvIGRvd25sb2FkIGFwcDogPGEgaHJlZj0iaHR0cDovL2JpdC5seS9JbnN0YV9CaW8i
+Pmh0dHA6Ly9iaXQubHkvSW5zdGFfQmlvPC9hPjwvZGl2Pg0K
+--00000000000074eb88057533bbba--

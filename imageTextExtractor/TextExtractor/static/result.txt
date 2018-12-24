@@ -1,0 +1,6 @@
+HAWA MAHAL- JAIPUR
+
+
+Address = Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Kanwar Nagar, Jaipur, Rajasthan 302002, India
+Longitude = 97.39535869999999 
+ Latitude = 35.513327 

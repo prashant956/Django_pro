@@ -1,0 +1,127 @@
+   *{
+   margin: 0;
+   padding: 0;
+} 
+#container {
+     background: silver;
+     width: 1350px;
+     height: 900px;
+     margin: 0 auto;
+     border: 1px soild black;
+     font-family: arial, verdana, sans-serif;
+}
+   #header {
+     background: blue ;
+     width: 1350px;
+     height: 110px;
+     color: white;
+}
+  
+   #nav {
+     background: yellow;
+     width: 1350px;
+}
+      #nav ul   {
+         list-style: none;
+}
+         #nav ul li {
+            float:left;
+            width: 200px;
+            padding:15px 0px;
+            text-align: center; 
+            }
+    #nav ul li:hover {
+            background: #ffd280;
+            color: black;
+}
+#nav a {
+     color: black;
+}
+   #middle {
+     background: white;
+     width: 1350px;
+     height: 300px;
+}
+       #left {
+     background: lightblue;
+     width: 800px;
+     height: 300px;
+     float:left;
+}
+     .post {
+         background: silver;
+         margin: 10px;  
+}
+      .title {
+           background: pink;
+           padding: 20px 10px;
+           color: red;
+           font-size: 25px;
+           font-weight: bold;
+}
+        .description {
+             background: #f1f1f1;
+             padding: 20px; 
+           
+}
+       #right {
+     background: lightgreen;
+     width: 500px;
+     height: 300px;
+     padding: 20px;
+     float:left;
+}
+      #right h2 {
+        text-align: center;      
+    }
+    #latest_post_group {
+         margin: 10px 0;
+
+}
+    .latest_post {
+     background: brown;
+     border: 2px soild black;
+     padding: 5px;
+     text-align: center;
+     color: white;
+     margin: 10px 0;
+}
+    #news_letter{
+    
+}
+     .news_letter_head {
+       text-align: center;
+       font-size: 25px;
+
+        }
+        input[type="text"] {
+            width: 500px;
+            height: 20px;  
+    
+         }
+
+        input[type="submit"] {
+            width: 500px;
+            margin: 10px 0;
+            background: orange;
+            color: black;
+            padding: 10px 0;
+            border: none;
+            font-size: 20px;         
+      }
+          input[type="submit"]:hover {
+            background: green;
+            color: white;
+       }
+        
+
+ #footer{
+    background: none;
+    width: 1350px;
+    height: 50px;
+    color: black;
+    text-align: center;
+}
+
+}
+ 

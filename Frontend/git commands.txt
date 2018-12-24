@@ -1,0 +1,35 @@
+   43  mkdir newproject
+   44  cd newproject
+   45  ls -a
+   46  git init
+   47  ls
+   48  ls -a
+   49  .git
+   50  cd .git
+   51  ls
+   52  ls -a
+   53  git status
+   54  cd ..
+   55  git status
+   56  git add --all
+   57  git status
+   58  git commit -m "elcome to git hub"
+   59  git config --global user.name prashantg956
+   60  git config --global user.email prashantg956@gmail.com
+   61  git commit -m "welcome to github"
+   62  git status
+   63  vim
+   64  vim readme.md
+   65  git status
+   66  git add readme.md
+   67  git commit -m
+   68  git commit -m "new file"
+   69  git remote add origin https://github.com/prashant956/project1.git
+   70  git push -u origin master
+   71  git push -u origin master
+   72  git push -u origin master
+   73  git confi-global user.name prashant956
+   74  git status
+   75  git push -u origin master
+   76  git pull
+   77  history
